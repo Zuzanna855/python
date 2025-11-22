@@ -1,2 +1,1 @@
 # python
-git clone
