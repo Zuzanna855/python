@@ -2,18 +2,30 @@ import requests
 from typing import Optional
 import argparse
 
+
 class Brewery:
-    def __init__(self, name: str, brewery_type: Optional[str], city: Optional[str], state: Optional[str]):
+    def __init__(
+        self,
+        name: str,
+        brewery_type: Optional[str],
+        city: Optional[str],
+        state: Optional[str],
+):
         self.name = name
         self.brewery_type = brewery_type
         self.city = city
         self.state = state
 
+
     def __str__(self):
         return f"{self.name} ({self.brewery_type}) - {self.city}, {self.state}"
 
 parser = argparse.ArgumentParser()
-parser.add_argument("--city", type=str, help="Filtruj browary po mieście")
+parser.add_argument(
+    "--city",
+    type=str,
+    help="Filtruj browary po mieście"
+)
 args = parser.parse_args()
 
 params = {"per_page": 20}
@@ -27,4 +39,3 @@ breweries = [Brewery(item.get("name"), item.get("brewery_type"), item.get("city"
 
 for b in breweries:
     print(b)
-

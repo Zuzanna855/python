@@ -1,6 +1,7 @@
 import requests
 from typing import Optional
 
+
 class Brewery:
     def __init__(
         self,
