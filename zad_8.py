@@ -16,12 +16,13 @@ class Brewery:
         self.city = city
         self.state = state
 
-
     def __str__(self):
         return f"{self.name} ({self.brewery_type}) - {self.city}, {self.state}"
 
     parser = argparse.ArgumentParser()
 parser.add_argument(
+
+
     "--city",
     type=str,
     help="Filtruj browary po mieście"
