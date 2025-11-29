@@ -1,3 +1,5 @@
 def mnozenie(a: int, b: int) -> int:
     return a*b
-print(mnozenie(2,4))
+
+
+print(mnozenie(2, 4))
