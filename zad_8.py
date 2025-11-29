@@ -20,6 +20,8 @@ class Brewery:
         return f"{self.name} ({self.brewery_type}) - {self.city}, {self.state}"
 
     parser = argparse.ArgumentParser()
+
+
 parser.add_argument(
 
 
