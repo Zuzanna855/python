@@ -20,8 +20,7 @@ class Brewery:
     def __str__(self):
         return f"{self.name} ({self.brewery_type}) - {self.city}, {self.state}"
 
-
-parser = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser()
 parser.add_argument(
     "--city",
     type=str,
